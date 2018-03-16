@@ -1,0 +1,62 @@
+<html>
+<head>
+<script>
+function openPage(pageName,elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(pageName).style.display = "block";
+    pageName.currentTarget.className += " active";
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+}
+</script>
+<style>
+
+body {font-family: "Lato", sans-serif;
+margin-top:80px;}
+
+.tablink {
+    background-color: #111;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+body{
+background-color:#111111
+}
+</style>
+</head>
+<body>
+<a href="home.html" target="_parent"><button class="tablink" onclick="openPage('Home', this,)" id="defaultOpen">HOME</button></a>
+<a href="about.html" target="bottomframe"><button class="tablink" onclick="openPage('About', this,)">ABOUT</button></a>
+<a href="contact.html" target="bottomframe"><button class="tablink" onclick="openPage('Contact', this,)">CONTACT</button></a>
+<a href="login.html" target="bottomframe"><button class="tablink" onclick="openPage('Login', this,)">LOGIN</button></a>
+</body>
+</html>

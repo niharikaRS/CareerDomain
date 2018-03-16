@@ -1,0 +1,63 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body{
+margin-left:100px;
+margin-right:200px;
+margin-bottom:200px;
+margin-top:100px;
+text-size:20px;
+}
+</style>
+</head>
+<body>
+<img src="contact.jpg" type="image/.jpg" width=100%><br>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<p>For more information<br><br>
+Kindly contact us through:<br><br>
+<span class="glyphicon glyphicon-phone"/> 040-78641454<br><br>
+<i class="fa fa-map-marker">&nbsp;&nbsp;Ashoka a la maison, Dulapally, Secunderabad, 500014</i><br><br>
+<i class="fa fa-envelope">&nbsp;&nbsp;niharikareddy33@gmail.com</i><br><br>
+<p>Submit your details and share your comments:
+<form class="contact-form" id="contact" role="form">
+<div class="form-field-wrapper">
+<input class="input-sm form-full" id="form-name" type="text" name="form-name" placeholder="Your Name" required/>
+</div><br>
+<div class="form-field-wrapper">
+<input class="input-sm form-full" id="form-email" type="email" name="form-email" placeholder="Email" required/>
+</div><br>
+<div class="form-field-wrapper">
+<input class="input-sm form-full" id="form-subject" type="text" name="form-subject" placeholder="Phone"/>
+</div><br>
+<div class="form-field-wrapper">
+<textarea class="form-full" id="form-message" rows=5 cols="50" name="form-message" placeholder="Your Message" required></textarea>
+</div><br>
+<button onclick="" class="submit" type="submit" id="form-submit" name="submit">Send Message</button>
+</form></div>
+<div class="col-md-6">
+<section class="full-screen-intro" style="height:625px">
+<div id="googleMap" style="overflow;hidden;position:relative">
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1902.1460845519693!2d78.47137225735959!3d17.541271015012334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8ff4fc2a5775%3A0x1ca3a50131c2b369!2sAshoka-+Ala-+Maison+Club+House!5e0!3m2!1sen!2sin!4v1520789517451" width="400" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</script>
+</div></section>
+</div>
+</div>
+</div>
+</body>
+</html>
