@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head><title>Personality Test</title>
+<link rel="stylesheet" href="test.css">
+</head>
+<body onload="startstop();">
+<div class="card">
+<div class="container">
+<h2><b>Personality Type Indicator Test</b></h2>
+<h4>Answer all the questions:</h4>
+</div>
+</div>
+<div class="container">
+<main>
+<form class="questionnaire" id="q1" data-question="1">
+ <h3>1. I am a 'worrier'</h3>
+<ul>
+<li><input type="radio" name="q1" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q1" value="b"/> Disagree</li>
+<li><input type="radio" name="q1" value="c"/> Neutral</li>
+<li><input type="radio" name="q1" value="d"/> Agree</li>
+<li><input type="radio" name="q1" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q2" data-question="2">
+ <h3>2. I make friends easily</h3>
+<ul>
+<li><input type="radio" name="q2" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q2" value="b"/> Disagree</li>
+<li><input type="radio" name="q2" value="c"/> Neutral</li>
+<li><input type="radio" name="q2" value="d"/> Agree</li>
+<li><input type="radio" name="q2" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q3" data-question="3">
+ <h3>3. I have a vivid imagination</h3>
+<ul>
+<li><input type="radio" name="q3" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q3" value="b"/> Disagree</li>
+<li><input type="radio" name="q3" value="c"/> Neutral</li>
+<li><input type="radio" name="q3" value="d"/> Agree</li>
+<li><input type="radio" name="q3" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q4" data-question="4">
+ <h3>4. I trust others</h3>
+<ul>
+<li><input type="radio" name="q4" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q4" value="b"/> Disagree</li>
+<li><input type="radio" name="q4" value="c"/> Neutral</li>
+<li><input type="radio" name="q4" value="d"/> Agree</li>
+<li><input type="radio" name="q4" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q5" data-question="5">
+ <h3>5. I complete tasks successfully</h3>
+<ul>
+<li><input type="radio" name="q5" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q5" value="b"/> Disagree</li>
+<li><input type="radio" name="q5" value="c"/> Neutral</li>
+<li><input type="radio" name="q5" value="d"/> Agree</li>
+<li><input type="radio" name="q5" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q6" data-question="6">
+ <h3>6. I get angry easily</h3>
+<ul>
+<li><input type="radio" name="q6" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q6" value="b"/> Disagree</li>
+<li><input type="radio" name="q6" value="c"/> Neutral</li>
+<li><input type="radio" name="q6" value="d"/> Agree</li>
+<li><input type="radio" name="q6" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q7" data-question="7">
+ <h3>7. I really enjoy large parties and gatherings</h3>
+<ul>
+<li><input type="radio" name="q7" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q7" value="b"/> Disagree</li>
+<li><input type="radio" name="q7" value="c"/> Neutral</li>
+<li><input type="radio" name="q7" value="d"/> Agree</li>
+<li><input type="radio" name="q7" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q8" data-question="8">
+ <h3>8. I think art is important</h3>
+<ul>
+<li><input type="radio" name="q8" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q8" value="b"/> Disagree</li>
+<li><input type="radio" name="q8" value="c"/> Neutral</li>
+<li><input type="radio" name="q8" value="d"/> Agree</li>
+<li><input type="radio" name="q8" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q9" data-question="9">
+ <h3>9. I use and manipulate others to get my own way</h3>
+<ul>
+<li><input type="radio" name="q9" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q9" value="b"/> Disagree</li>
+<li><input type="radio" name="q9" value="c"/> Neutral</li>
+<li><input type="radio" name="q9" value="d"/> Agree</li>
+<li><input type="radio" name="q9" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q10" data-question="10">
+ <h3>10. I don't like things to be a mess - I like to tidy up</h3>
+<ul>
+<li><input type="radio" name="q10" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q10" value="b"/> Disagree</li>
+<li><input type="radio" name="q10" value="c"/> Neutral</li>
+<li><input type="radio" name="q10" value="d"/> Agree</li>
+<li><input type="radio" name="q10" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q11" data-question="11">
+ <h3>11. I often feel sad</h3>
+<ul>
+<li><input type="radio" name="q11" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q11" value="b"/> Disagree</li>
+<li><input type="radio" name="q11" value="c"/> Neutral</li>
+<li><input type="radio" name="q11" value="d"/> Agree</li>
+<li><input type="radio" name="q11" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q12" data-question="12">
+ <h3>12. I like to take charge of situations and events</h3>
+<ul>
+<li><input type="radio" name="q12" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q12" value="b"/> Disagree</li>
+<li><input type="radio" name="q12" value="c"/> Neutral</li>
+<li><input type="radio" name="q12" value="d"/> Agree</li>
+<li><input type="radio" name="q12" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q13" data-question="13">
+ <h3>13. I experience deep and varied emotions</h3>
+<ul>
+<li><input type="radio" name="q13" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q13" value="b"/> Disagree</li>
+<li><input type="radio" name="q13" value="c"/> Neutral</li>
+<li><input type="radio" name="q13" value="d"/> Agree</li>
+<li><input type="radio" name="q13" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q14" data-question="14">
+ <h3>14. I love to help others</h3>
+<ul>
+<li><input type="radio" name="q14" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q14" value="b"/> Disagree</li>
+<li><input type="radio" name="q14" value="c"/> Neutral</li>
+<li><input type="radio" name="q14" value="d"/> Agree</li>
+<li><input type="radio" name="q14" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q15" data-question="15">
+ <h3>15. I keep my promises</h3>
+<ul>
+<li><input type="radio" name="q15" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q15" value="b"/> Disagree</li>
+<li><input type="radio" name="q15" value="c"/> Neutral</li>
+<li><input type="radio" name="q15" value="d"/> Agree</li>
+<li><input type="radio" name="q15" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q16" data-question="16">
+ <h3>16. I find it difficult to approach others</h3>
+<ul>
+<li><input type="radio" name="q16" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q16" value="b"/> Disagree</li>
+<li><input type="radio" name="q16" value="c"/> Neutral</li>
+<li><input type="radio" name="q16" value="d"/> Agree</li>
+<li><input type="radio" name="q16" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q17" data-question="17">
+ <h3>17. I am always busy - always on the go</h3>
+<ul>
+<li><input type="radio" name="q17" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q17" value="b"/> Disagree</li>
+<li><input type="radio" name="q17" value="c"/> Neutral</li>
+<li><input type="radio" name="q17" value="d"/> Agree</li>
+<li><input type="radio" name="q17" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q18" data-question="18">
+ <h3>18. I prefer variety to routine</h3>
+<ul>
+<li><input type="radio" name="q18" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q18" value="b"/> Disagree</li>
+<li><input type="radio" name="q18" value="c"/> Neutral</li>
+<li><input type="radio" name="q18" value="d"/> Agree</li>
+<li><input type="radio" name="q18" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q19" data-question="19">
+ <h3>19. I love a good argument - a good fight</h3>
+<ul>
+<li><input type="radio" name="q19" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q19" value="b"/> Disagree</li>
+<li><input type="radio" name="q19" value="c"/> Neutral</li>
+<li><input type="radio" name="q19" value="d"/> Agree</li>
+<li><input type="radio" name="q19" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q20" data-question="20">
+ <h3>20. I work hard</h3>
+<ul>
+<li><input type="radio" name="q20" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q20" value="b"/> Disagree</li>
+<li><input type="radio" name="q20" value="c"/> Neutral</li>
+<li><input type="radio" name="q20" value="d"/> Agree</li>
+<li><input type="radio" name="q20" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q21" data-question="21">
+ <h3>21. I over-indulge and go on 'binges'</h3>
+<ul>
+<li><input type="radio" name="q21" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q21" value="b"/> Disagree</li>
+<li><input type="radio" name="q21" value="c"/> Neutral</li>
+<li><input type="radio" name="q21" value="d"/> Agree</li>
+<li><input type="radio" name="q21" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q22" data-question="22">
+ <h3>22. I love excitement</h3>
+<ul>
+<li><input type="radio" name="q22" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q22" value="b"/> Disagree</li>
+<li><input type="radio" name="q22" value="c"/> Neutral</li>
+<li><input type="radio" name="q22" value="d"/> Agree</li>
+<li><input type="radio" name="q22" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q23" data-question="23">
+ <h3>23. I enjoy reading challenging books and articles</h3>
+<ul>
+<li><input type="radio" name="q23" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q23" value="b"/> Disagree</li>
+<li><input type="radio" name="q23" value="c"/> Neutral</li>
+<li><input type="radio" name="q23" value="d"/> Agree</li>
+<li><input type="radio" name="q23" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q24" data-question="24">
+ <h3>24. I believe that I am better than others</h3>
+<ul>
+<li><input type="radio" name="q24" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q24" value="b"/> Disagree</li>
+<li><input type="radio" name="q24" value="c"/> Neutral</li>
+<li><input type="radio" name="q24" value="d"/> Agree</li>
+<li><input type="radio" name="q24" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q25" data-question="25">
+ <h3>25. I am always prepared</h3>
+<ul>
+<li><input type="radio" name="q25" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q25" value="b"/> Disagree</li>
+<li><input type="radio" name="q25" value="c"/> Neutral</li>
+<li><input type="radio" name="q25" value="d"/> Agree</li>
+<li><input type="radio" name="q25" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q26" data-question="26">
+ <h3>26. I panic easily</h3>
+<ul>
+<li><input type="radio" name="q26" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q26" value="b"/> Disagree</li>
+<li><input type="radio" name="q26" value="c"/> Neutral</li>
+<li><input type="radio" name="q26" value="d"/> Agree</li>
+<li><input type="radio" name="q26" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q27" data-question="27">
+ <h3>27. I am a really cheerful person</h3>
+<ul>
+<li><input type="radio" name="q27" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q27" value="b"/> Disagree</li>
+<li><input type="radio" name="q27" value="c"/> Neutral</li>
+<li><input type="radio" name="q27" value="d"/> Agree</li>
+<li><input type="radio" name="q27" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q28" data-question="28">
+ <h3>28. I tend to support political candidates who favour progress and reform</h3>
+<ul>
+<li><input type="radio" name="q28" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q28" value="b"/> Disagree</li>
+<li><input type="radio" name="q28" value="c"/> Neutral</li>
+<li><input type="radio" name="q28" value="d"/> Agree</li>
+<li><input type="radio" name="q28" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q29" data-question="29">
+ <h3>29. I sympathise with the homeless</h3>
+<ul>
+<li><input type="radio" name="q29" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q29" value="b"/> Disagree</li>
+<li><input type="radio" name="q29" value="c"/> Neutral</li>
+<li><input type="radio" name="q29" value="d"/> Agree</li>
+<li><input type="radio" name="q29" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q30" data-question="30">
+ <h3>30. I am very spontaneous - I act without thinking</h3>
+<ul>
+<li><input type="radio" name="q30" value="a"/> Strongly Disagree</li>
+<li><input type="radio" name="q30" value="b"/> Disagree</li>
+<li><input type="radio" name="q30" value="c"/> Neutral</li>
+<li><input type="radio" name="q30" value="d"/> Agree</li>
+<li><input type="radio" name="q30" value="e"/> Strongly Agree</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<div id="results"></div>
+</main><br>
+<footer>
+<div class="pull-left">Total: 30 Questions</div>
+<div class="pull-right">
+<input id="clock" type="text" value="00:00" readonly><br>
+</div>
+</footer>
+</div>
+<script src="query.js"></script>
+<script src="questionnaire.js"></script>
+<script type="text/javascript">
+	var flagclock = 0;
+	var flagstop = 1;
+	var stoptime = 0;
+	var currenttime;
+	var splitdate = '';
+
+	var clock;
+
+	function startstop()
+		{
+		var startstop = document.getElementById('q1');
+		var startdate = new Date();
+		var starttime = startdate.getTime();
+		if(flagclock==0)
+			{
+			flagclock = 1;
+			counter(starttime);
+			}
+		else
+			{			
+			flagclock = 0;
+			flagstop = 1;
+			splitdate = '';
+			}
+		}
+
+	function counter(starttime)
+		{
+		
+		clock = document.getElementById('clock');
+		currenttime = new Date();
+		var timediff = currenttime.getTime() - starttime;
+		if(flagstop == 1)
+			{
+			timediff = timediff + stoptime
+			}
+		if(flagclock == 1)
+			{
+			clock.value = formattime(timediff,'');
+			refresh = setTimeout('counter(' + starttime + ');',10);
+			}
+		else
+			{
+			window.clearTimeout(refresh);
+			stoptime = timediff;
+			}
+		}
+
+	function formattime(rawtime,roundtype)
+		{
+		if(roundtype == 'round')
+			{
+			var ds = Math.round(rawtime/100) + '';
+			}
+		else
+			{
+			var ds = Math.floor(rawtime/100) + '';		
+			}
+		var sec = Math.floor(rawtime/1000);
+		var min = Math.floor(rawtime/60000);
+		ds = ds.charAt(ds.length - 1);
+		if(min >= 60)
+			{
+			startstop();
+			}
+		sec = sec - 60 * min + '';
+		if(sec.charAt(sec.length - 2) != '')
+			{
+			sec = sec.charAt(sec.length - 2) + sec.charAt(sec.length - 1);
+			}
+		else
+			{
+			sec = 0 + sec.charAt(sec.length - 1);
+			}	
+		min = min + '';
+		if(min.charAt(min.length - 2) != '')
+			{
+			min = min.charAt(min.length - 2)+min.charAt(min.length - 1);
+			}
+		else
+			{
+			min = 0 + min.charAt(min.length - 1);
+			}
+		return min + ':' + sec;
+		}
+</script>
+</body>
+</html>     

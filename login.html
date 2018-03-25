@@ -5,6 +5,9 @@ div{
 padding:10px;
 }
 body{
+background-image:url("image/login.jpg");
+background-repeat:no-repeat;
+background-size:100% 100%;
 margin-left:200px;
 margin-right:200px;
 margin-bottom:200px;
@@ -25,17 +28,26 @@ margin-top:100px;
     padding: 2px 16px;
 }
 a:link {
-    color: blue;
+    color: green;
 }
 
 /* visited link */
 a:visited {
-    color: grey;
+    color: blue;
 }
 
 /* mouse over link */
 a:hover {
     color: red;
+}
+.button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: solid;
+	padding:5px 10px;
+	border-width:1px;
+    cursor:pointer;
+    overflow: hidden;        
 }
 </style>
 </head>
@@ -45,20 +57,14 @@ a:hover {
 <center><h2>Login</h2>
 <div class="container">
 <div class="LoginForm-input LoginForm-username">
-<input
-  type="text"
- name="username"
-   placeholder="username"
- required="required" />
-
+<input  type="text" name="username"   placeholder="username" />
   </div>
-
   <div class="LoginForm-input LoginForm-password">
-    <input type="password" required class="text-input" name="password" placeholder="Password" required="required"/>
-   
+    <input type="password" required class="text-input" name="password" placeholder="Password"/>
+  
 </div>
 
-  <div><a href="new.html"><input type="submit" value="Log in"></a>
+  <div><a href="new.html"><input type="submit" class="button"value="Log in"></a>
 <p> if not a existing user?, <a href="register.html">Register now</a>
 </div>
 </div>

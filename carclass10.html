@@ -1,55 +1,352 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 20px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-} 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-</style>
+<head><title>Personality Test</title>
+<link rel="stylesheet" href="test.css">
 </head>
-<body>
-<div class="sidenav">
-  <a href="new.html">Home</a><br>
-  <a href="class10.html">Class 10</a><br>
-  <a href="class12.html">Class 12</a><br>
-  <a href="graduates.html">Graduates</a><br>
-  <a href="career-success.html">Success stories</a><br>
+<body onload="startstop();">
+<div class="card">
+<div class="container">
+<h1><b>Stream Evaualtion Test</b></h1>
+<h4>Answer all the questions:</h4>
 </div>
-<div class="main">
 </div>
+<div class="container">
+<main>
+<form class="questionnaire" id="q1" data-question="1">
+ <h3>1. You would like to solve..</h3>
+<ul>
+<li><input type="radio" name="q1" value="a"/> Mathematical problems.</li>
+<li><input type="radio" name="q1" value="b"/> Scientific problems.</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q2" data-question="2">
+ <h3>2. You would like work with...</h3>
+<ul>
+<li><input type="radio" name="q2" value="a"/> Machines or tools.</li>
+<li><input type="radio" name="q2" value="b"/> Real time problems.</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q3" data-question="3">
+ <h3>3. You would like to do...</h3>
+<ul>
+<li><input type="radio" name="q3" value="a"/> Creative activities</li>
+<li><input type="radio" name="q3" value="b"/> Creative writing</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q4" data-question="4">
+ <h3>4. You would like to help people...</h3>
+<ul>
+<li><input type="radio" name="q4" value="a"/> In teaching ,first aid</li>
+<li><input type="radio" name="q4" value="b"/> Giving information effectively.</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q5" data-question="5">
+ <h3>5. You would like to ...</h3>
+<ul>
+<li><input type="radio" name="q5" value="a"/> Lead and persuade people.</li>
+<li><input type="radio" name="q5" value="b"/> Can sell ideas and things</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q6" data-question="6">
+ <h3>6. You would like to work with...</h3>
+<ul>
+<li><input type="radio" name="q6" value="a"/> Numbers,records. </li>
+<li><input type="radio" name="q6" value="b"/> Machines in a set,orderly way</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q7" data-question="7">
+ <h3>7. You are good at understanding...</h3>
+<ul>
+<li><input type="radio" name="q7" value="a"/> Math problems.</li>
+<li><input type="radio" name="q7" value="b"/> Science problems.</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q8" data-question="8">
+ <h3>8. You have good skills at...</h3>
+<ul>
+<li><input type="radio" name="q8" value="a"/> Tools,machines.</li>
+<li><input type="radio" name="q8" value="b"/> Animals</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q9" data-question="9">
+ <h3>9. You are good at..</h3>
+<ul>
+<li><input type="radio" name="q9" value="a"/> Teaching,nursing</li>
+<li><input type="radio" name="q9" value="b"/> Giving information</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q10" data-question="10">
+ <h3>10. You have good artistic abilities in...</h3>
+<ul>
+<li><input type="radio" name="q10" value="a"/> Creative writing,drama</li>
+<li><input type="radio" name="q10" value="b"/> Art</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q11" data-question="11">
+ <h3>11. You are good at ....</h3>
+<ul>
+<li><input type="radio" name="q11" value="a"/> People and selling things</li>
+<li><input type="radio" name="q11" value="b"/> Ideas</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q12" data-question="12">
+ <h3>12. You are...</h3>
+<ul>
+<li><input type="radio" name="q12" value="a"/> Precise</li>
+<li><input type="radio" name="q12" value="b"/> Intellectual</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q13" data-question="13">
+ <h3>13. You are ...</h3>
+<ul>
+<li><input type="radio" name="q13" value="a"/> Helpful for friends</li>
+<li><input type="radio" name="q13" value="b"/> Helpless for friends</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q14" data-question="14">
+ <h3>14. You are...</h3>
+<ul>
+<li><input type="radio" name="q14" value="a"/> Hardworker</li>
+<li><input type="radio" name="q14" value="b"/> Smartworker</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q15" data-question="15">
+ <h3>15. You are..</h3>
+<ul>
+<li><input type="radio" name="q15" value="a"/> Private kind of person</li>
+<li><input type="radio" name="q15" value="b"/> Public person</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q16" data-question="16">
+ <h3>16. Are you  a...</h3>
+<ul>
+<li><input type="radio" name="q16" value="a"/> Movie buff</li>
+<li><input type="radio" name="q16" value="b"/> Political buff</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q17" data-question="17">
+ <h3>17. Which language you are comfortable speaking in..</h3>
+<ul>
+<li><input type="radio" name="q17" value="a"/> Your mother tongue </li>
+<li><input type="radio" name="q17" value="b"/> English </li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q18" data-question="18">
+ <h3>18. What is ur best characteristic..</h3>
+<ul>
+<li><input type="radio" name="q18" value="a"/> Your sense of humour</li>
+<li><input type="radio" name="q18" value="b"/> Your work ethic</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q19" data-question="19">
+ <h3>19. Your taste in music consists of...</h3>
+<ul>
+<li><input type="radio" name="q19" value="a"/> You don't really have a preference</li>
+<li><input type="radio" name="q19" value="b"/> The latest and greatest by main stream artists</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q20" data-question="20">
+ <h3>20. Where do you see yourself in next 10 years...</h3>
+<ul>
+<li><input type="radio" name="q20" value="a"/> Producing your own work</li>
+<li><input type="radio" name="q20" value="b"/> Being successfully employed</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q21" data-question="21">
+ <h3>21. Which pieces of art stand out most to you...</h3>
+<ul>
+<li><input type="radio" name="q21" value="a"/> Modern paintings</li>
+<li><input type="radio" name="q21" value="b"/> Photography</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q22" data-question="22">
+ <h3>22. Which section in movie would you rent..</h3>
+<ul>
+<li><input type="radio" name="q22" value="a"/> Drama</li>
+<li><input type="radio" name="q22" value="b"/> Action</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q23" data-question="23">
+ <h3>23. Where would you road trip to..</h3>
+<ul>
+<li><input type="radio" name="q23" value="a"/> Hollywood California to see the stars</li>
+<li><input type="radio" name="q23" value="b"/> Salt lake city</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q24" data-question="24">
+ <h3>24. Which problem is the easiest for you to solve..</h3>
+<ul>
+<li><input type="radio" name="q24" value="a"/> Getting the child you are babysitting to go to bed.</li>
+<li><input type="radio" name="q24" value="b"/> Setting a dispute between friends</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q25" data-question="25">
+ <h3>25. What is your worst habit..</h3>
+<ul>
+<li><input type="radio" name="q25" value="a"/> Scratching rude places</li>
+<li><input type="radio" name="q25" value="b"/> Biting your nails</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q26" data-question="26">
+ <h3>26. What is your pet name...</h3>
+<ul>
+<li><input type="radio" name="q26" value="a"/> So sickly!</li>
+<li><input type="radio" name="q26" value="b"/> That is just yucky!</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q27" data-question="27">
+ <h3>27. What colour hair do you have..</h3>
+<ul>
+<li><input type="radio" name="q27" value="a"/> Purple</li>
+<li><input type="radio" name="q27" value="b"/> Pink</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q28" data-question="28">
+ <h3>28. What is your most used word</h3>
+<ul>
+<li><input type="radio" name="q28" value="a"/> Stupid</li>
+<li><input type="radio" name="q28" value="b"/> Sweetheart</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q29" data-question="29">
+ <h3>29. What do you do in spare time..</h3>
+<ul>
+<li><input type="radio" name="q29" value="a"/> Watch tv</li>
+<li><input type="radio" name="q29" value="b"/> Play sports</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<form class="questionnaire" id="q30" data-question="30">
+ <h3>30. How good are you at work</h3>
+<ul>
+<li><input type="radio" name="q30" value="a"/> Hardworking</li>
+<li><input type="radio" name="q30" value="b"/> Just do average</li>
+</ul>
+<button id="submit">Submit</button>
+</form>
+<div id="results"></div>
+</main>
+<footer>
+<div class="pull-left">Total: 30 Questions</div>
+<div class="pull-right"><input id="clock" type="text" value="00:00" readonly><br>
+</div>
+</footer>
+</div>
+<script src="query.js"></script>
+<script src="questionnairec10.js"></script>
+<script type="text/javascript">
+	var flagclock = 0;
+	var flagstop = 1;
+	var stoptime = 0;
+	var currenttime;
+	var splitdate = '';
+
+	var clock;
+
+	function startstop()
+		{
+		var startstop = document.getElementById('q1');
+		var startdate = new Date();
+		var starttime = startdate.getTime();
+		if(flagclock==0)
+			{
+			flagclock = 1;
+			counter(starttime);
+			}
+		else
+			{			
+			flagclock = 0;
+			flagstop = 1;
+			splitdate = '';
+			}
+		}
+
+	function counter(starttime)
+		{
+		
+		clock = document.getElementById('clock');
+		currenttime = new Date();
+		var timediff = currenttime.getTime() - starttime;
+		if(flagstop == 1)
+			{
+			timediff = timediff + stoptime
+			}
+		if(flagclock == 1)
+			{
+			clock.value = formattime(timediff,'');
+			refresh = setTimeout('counter(' + starttime + ');',10);
+			}
+		else
+			{
+			window.clearTimeout(refresh);
+			stoptime = timediff;
+			}
+		}
+
+	function formattime(rawtime,roundtype)
+		{
+		if(roundtype == 'round')
+			{
+			var ds = Math.round(rawtime/100) + '';
+			}
+		else
+			{
+			var ds = Math.floor(rawtime/100) + '';		
+			}
+		var sec = Math.floor(rawtime/1000);
+		var min = Math.floor(rawtime/60000);
+		ds = ds.charAt(ds.length - 1);
+		if(min >= 60)
+			{
+			startstop();
+			}
+		sec = sec - 60 * min + '';
+		if(sec.charAt(sec.length - 2) != '')
+			{
+			sec = sec.charAt(sec.length - 2) + sec.charAt(sec.length - 1);
+			}
+		else
+			{
+			sec = 0 + sec.charAt(sec.length - 1);
+			}	
+		min = min + '';
+		if(min.charAt(min.length - 2) != '')
+			{
+			min = min.charAt(min.length - 2)+min.charAt(min.length - 1);
+			}
+		else
+			{
+			min = 0 + min.charAt(min.length - 1);
+			}
+		return min + ':' + sec;
+		}
+</script>
 </body>
-</html>
+</html>     
