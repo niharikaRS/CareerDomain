@@ -1,8 +1,12 @@
 <html>
 <head><title>Login</title>
 <style>
-div{
-padding:10px;
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
 }
 body{
 background-image:url("image/login.jpg");
@@ -14,18 +18,53 @@ margin-bottom:200px;
 margin-top:100px;
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 50%;
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ccc;
+margin-bottom: 40px;
 }
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+div.container{
+width: 900px;
+height: 610px;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
 }
-
-.container {
-    padding: 2px 16px;
+div.main{
+width: 300px;
+padding: 10px 50px 25px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: raleway;
+margin-top:50px;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+float:left;
+font-weight: bold;
+}
+input[type=button]{
+font-size: 16px;  
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: solid;
+	padding:5px 10px;
+	border-width:1px;
+    cursor:pointer;
+    overflow: hidden;        
 }
 a:link {
     color: green;
@@ -40,35 +79,23 @@ a:visited {
 a:hover {
     color: red;
 }
-.button {     
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: solid;
-	padding:5px 10px;
-	border-width:1px;
-    cursor:pointer;
-    overflow: hidden;        
-}
 </style>
+<script src="login.js"></script>
 </head>
 <body>
 <center>
-<div class="card">
-<center><h2>Login</h2>
 <div class="container">
-<div class="LoginForm-input LoginForm-username">
-<input  type="text" name="username"   placeholder="username" />
-  </div>
-  <div class="LoginForm-input LoginForm-password">
-    <input type="password" required class="text-input" name="password" placeholder="Password"/>
-  
-</div>
-
-  <div><a href="new.html"><input type="submit" class="button"value="Log in"></a>
+<div class="main">
+<h2>Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>Email :</label>
+<input type="text" name="email" id="email" placeholder="Enter valid email"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"placeholder="Enter 7 or more characters"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
 <p> if not a existing user?, <a href="register.html">Register now</a>
 </div>
-</div>
-</center>
 </div>
 </center>
 </body>
